@@ -11,9 +11,6 @@ public class Controls : MonoBehaviour
 
     public NavMeshAgent playerAgent;
 
-    public int playerHealth = 100;
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -45,18 +42,6 @@ public class Controls : MonoBehaviour
                 playerAgent.SetDestination(mousePosHit.point);
 
             }
-
-
-            //if health reaches 0
-            if(playerHealth == 0)
-            {
-
-                //destroy object
-                Destroy(gameObject);
-
-
-            }
-
 
         }
 
